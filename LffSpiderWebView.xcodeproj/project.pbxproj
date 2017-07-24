@@ -15,6 +15,7 @@
 		28DE8D5B1F2053E600B75A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DE8D591F2053E600B75A2C /* LaunchScreen.storyboard */; };
 		28DE8D661F2053E600B75A2C /* LffSpiderWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE8D651F2053E600B75A2C /* LffSpiderWebViewTests.m */; };
 		28DE8D711F2053E600B75A2C /* LffSpiderWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE8D701F2053E600B75A2C /* LffSpiderWebViewUITests.m */; };
+		28DE8D801F20541400B75A2C /* SpiderWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE8D7F1F20541400B75A2C /* SpiderWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		28DE8D6C1F2053E600B75A2C /* LffSpiderWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LffSpiderWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DE8D701F2053E600B75A2C /* LffSpiderWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LffSpiderWebViewUITests.m; sourceTree = "<group>"; };
 		28DE8D721F2053E600B75A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DE8D7E1F20541400B75A2C /* SpiderWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiderWebView.h; sourceTree = "<group>"; };
+		28DE8D7F1F20541400B75A2C /* SpiderWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiderWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				28DE8D4F1F2053E600B75A2C /* AppDelegate.m */,
 				28DE8D511F2053E600B75A2C /* ViewController.h */,
 				28DE8D521F2053E600B75A2C /* ViewController.m */,
+				28DE8D7E1F20541400B75A2C /* SpiderWebView.h */,
+				28DE8D7F1F20541400B75A2C /* SpiderWebView.m */,
 				28DE8D541F2053E600B75A2C /* Main.storyboard */,
 				28DE8D571F2053E600B75A2C /* Assets.xcassets */,
 				28DE8D591F2053E600B75A2C /* LaunchScreen.storyboard */,
@@ -208,7 +213,7 @@
 					28DE8D471F2053E600B75A2C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = CYP2Q7U7L3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					28DE8D601F2053E600B75A2C = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -278,6 +283,7 @@
 			files = (
 				28DE8D531F2053E600B75A2C /* ViewController.m in Sources */,
 				28DE8D501F2053E600B75A2C /* AppDelegate.m in Sources */,
+				28DE8D801F20541400B75A2C /* SpiderWebView.m in Sources */,
 				28DE8D4D1F2053E600B75A2C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,9 +435,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CYP2Q7U7L3;
 				INFOPLIST_FILE = LffSpiderWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sand.LffSpiderWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "73efab6a-7320-4923-a8c9-adbce51b0540";
+				PROVISIONING_PROFILE_SPECIFIER = sandComm_Dev_Profile;
 			};
 			name = Debug;
 		};
@@ -441,9 +450,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CYP2Q7U7L3;
 				INFOPLIST_FILE = LffSpiderWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sand.LffSpiderWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "73efab6a-7320-4923-a8c9-adbce51b0540";
+				PROVISIONING_PROFILE_SPECIFIER = sandComm_Dev_Profile;
 			};
 			name = Release;
 		};
